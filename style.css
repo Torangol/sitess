@@ -1,0 +1,820 @@
+html{
+    box-sizing: border-box;
+    
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+ul{
+    list-style: none;
+
+}
+
+body {
+    font-family: 'Gloria Hallelujah', cursive;;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.container{
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+body{
+    background: -webkit-linear-gradient(90deg, #d4d4d4,#d4d4d4,#d4d4d4,#cccccc,#a0e580);
+    min-height: 100vh;
+
+}
+
+.header{
+    align-items: center;
+}
+
+.header_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+    
+}
+
+.logotype{
+    position: absolute;
+    margin-left: 510px;
+    margin-top: -100px;
+
+}
+
+
+
+
+.menu_list1{
+    display: flex;
+    align-items: center;
+    gap: 0 240px;
+    font-weight: 700;
+    font-size: 18px;
+    font-size: 120%;
+    
+}
+
+.menu_list2{
+    display: flex;
+    align-items: center;
+    gap: 0 250px;
+    font-weight: 700;
+    margin-left: 750px;
+    margin-top: -40px;
+    font-size: 18px;
+    font-size: 120%;
+}
+
+.menu_btn{
+    border-radius: 30px;
+    max-width: 120px;
+    font-size: 120%;
+    color: black; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.menu_btn::after{
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */     
+}
+
+.menu_btn:hover:after{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(141, 24, 187); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */      
+}
+
+.menu_btn1{
+    border-radius: 30px;
+    max-width: 120px;
+    font-size: 120%;
+    color: black; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.menu_btn1::after{
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */     
+}
+
+.menu_btn1:hover:after{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(141, 24, 187); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */      
+}
+
+.menu_link{
+	color: black; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.menu_link::after{
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */  
+}
+
+.menu_link:hover:after{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */ 
+    background-color: rgb(141, 24, 187); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */   
+}
+
+.menu_link1{
+	color: black; /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.menu_link1::after{
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */  
+}
+
+.menu_link1:hover:after{
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */ 
+    background-color: rgb(141, 24, 187); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */   
+}
+
+.popup_bg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+}
+
+.close_popup{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.popup form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup form input{
+    width: 60%;
+    border: 2px solid #000;
+    font-size: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.popup form input[type="submit"] {
+    background: #000;
+    color: #ffffff;
+}
+
+.popup_bg1{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.popup1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+}
+
+.close_popup1{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.popup1 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup1 form input{
+    width: 60%;
+    border: 2px solid #000;
+    font-size: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.popup1 form input[type="submit"] {
+    background: #000;
+    color: #ffffff;
+}
+
+.popup_bg2{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.popup2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    background: #ffffff;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    padding-top: 60px;
+}
+
+.close_popup2{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.popup2 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup2 form input{
+    width: 60%;
+    border: 2px solid #000;
+    font-size: 20px;
+    margin-bottom: 30px;
+    height: 40px;
+}
+
+.popup2 form input[type="submit"] {
+    background: #000;
+    color: #ffffff;
+}
+
+
+
+.header_content_image{
+    padding-top: 150px;
+    margin-left: -352px;
+    padding-bottom: 50px;
+    mask-image: linear-gradient(to left, transparent 5%, black);
+
+}
+
+
+
+.title{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    margin: auto;
+    max-width: 1200px;
+    font-size: 64px;
+    position: absolute;
+    padding-left: 550px;
+    padding-top: 500px;
+}
+
+.border{
+    margin-left: -50px;
+    margin-top: -300px;
+    width:1945px;
+    height:800px;
+    background:rgb(22, 22, 22);
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.border1{
+
+    width: 1900px;
+    height: 700px;
+    padding-left: 500px;
+}
+
+.border2{
+    margin-left: -50px;
+    margin-top: -95px;
+    width:1995px;
+    height:850px;
+    background:rgb(175, 175, 175);
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.border3{
+    margin-left: -50px;
+    margin-top: 750px;
+    width:1995px;
+    height:200px;
+    background:rgb(22, 22, 22);
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.SOC1{
+    margin-top: -5px;
+    margin-left: 15px;
+    position: absolute;
+}
+
+.SOC2{
+    margin-top: 60px;
+    margin-right: 230px;
+    position: absolute;
+}
+
+.SOC3{
+    margin-top: 130px;
+    margin-right: 20px;
+    position: absolute;
+}
+
+.SOC11{
+    margin-top: 15px;
+    position: absolute;
+}
+
+.SOC22{
+    margin-top: 15px;
+    margin-left: 100px;
+    position: absolute;
+}
+
+.SOC33{
+    margin-top: 15px;
+    margin-left: 220px;
+    position: absolute;
+}
+
+
+.sag{
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.teext{
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.STRISHKA{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    
+    
+}
+
+.namesstr{
+    text-align: center;
+    display: flex;
+    gap: 0 240px;
+    font-weight: 700;
+    padding-top: 50px;
+
+}
+
+.prices{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin-top: -37px ;
+    
+}
+
+
+
+
+
+.opisanie{
+    font-family: 'Inter', sans-serif;
+    color: rgb(183, 196, 171);
+
+}
+
+.op1{
+    padding-right: 600px;
+    padding-top: 15px;
+    max-width: 1050px;
+}
+
+.op2{
+    margin-left: 530px;
+    margin-top: -73px;
+}
+
+.op3{
+    margin-top: 140px;
+    max-width: 420px;
+    position: absolute;
+}
+
+.op4{
+    margin-left: 530px;
+    margin-top: 140px;
+    max-width: 420px;
+    position: absolute;
+}
+
+
+.OKR{
+    padding-left: 100px;
+}
+
+.PLET{
+    margin-top: 200px;
+    position: absolute;
+}
+
+.OTS{
+    margin-left: 410px;
+    margin-top: 400px;
+    position: absolute;
+}
+
+.OTS{
+    transition: 1s;
+    text-align: center; 
+  }
+.OTS:hover {
+    transform: scale(1.2);
+  }
+
+.POD_nol{
+    margin-left: 530px;
+    margin-top: 200px;
+    position: absolute;
+}
+
+.price1{
+    color: rgb(129, 155, 155);
+    padding-left: 315px;
+    margin-top: -15px;
+}
+
+.price2{
+    color: rgb(129, 155, 155); 
+    padding-left: 845px;
+    margin-top: -30px;
+}
+
+.price3{
+    color: rgb(129, 155, 155); 
+    margin-top: 145px;
+    padding-left: 300px;
+    position: absolute;
+}
+
+.price4{
+    color: rgb(129, 155, 155); 
+    margin-top: 145px;
+    padding-left: 900px;
+    position: absolute;
+}
+
+.line{
+    background: rgb(194, 199, 170);
+    height: 3px;
+    width: 415px;
+}
+
+.line1{
+    background: rgb(194, 199, 170);
+    height: 3px;
+    width: 415px;
+    margin-left: 530px;
+    margin-top: -4px;
+    
+}
+
+.line2{
+    background: rgb(194, 199, 170);
+    height: 3px;
+    width: 415px;
+    margin-top: 180px;
+    position: absolute;
+}
+
+.line3{
+    background: rgb(194, 199, 170);
+    height: 3px;
+    width: 415px;
+    margin-left: 530px;
+    margin-top: 180px;
+    position: absolute;
+}
+
+.lines{
+    background:rgb(248, 5, 5);
+    height: 115px;
+    width: 201px;
+    position: absolute;
+    margin-top: -1600px;
+}
+
+
+
+.linew{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin-top: -325px;
+}
+
+.lineww{
+    height: 100px;
+    width: 100px;
+    margin-top: 450px;
+    position: absolute;
+}
+
+.end{
+    margin-left: 800px;
+    margin-top: 1400px;
+    position: absolute;
+}
+
+.news{
+    position: absolute;
+
+    margin-left: 300px;
+    margin-top: 100px;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+
+.neews{
+    position: absolute;
+
+    margin-left: 750px;
+    margin-top: 100px;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+
+.neeews{
+    position: absolute;
+
+    margin-left: 1200px;
+    margin-top: 100px;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+
+.phon{
+    width: 1995px;
+    height: 850px;
+}
+
+
+/* Общие стили */
+*, *:after, *:before { 
+
+	box-sizing: border-box; 
+}
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	background: #527c82;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.hover-text-one figure h3 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.hover-text-one figure h3 span {
+	font-weight: 800;
+}
+.hover-text-one figure h3,
+.hover-text-one figure p {
+	margin: 0;
+}
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Эффект при наведении */
+figure.effect-text-two figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+figure.effect-text-two h3 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+    text-shadow: 3px 3px 3px #000;
+	color: #ffffff !important;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+figure.effect-text-two figcaption::before,
+figure.effect-text-two p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-text-two p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+figure.effect-text-two:hover h3 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+	transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+figure.effect-text-two:hover figcaption::before ,
+figure.effect-text-two:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+     
+.newesw{
+    color: #ffffff;
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    padding-left: 945px;
+    margin-top: -750px;
+}
